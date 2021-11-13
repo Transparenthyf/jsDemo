@@ -1,5 +1,3 @@
-import newNode from "./newNode.js"
-
 export default function insert(node, value) {
   // 节点不存在，新建一个节点
   if (typeof node.value === 'undefined') {
