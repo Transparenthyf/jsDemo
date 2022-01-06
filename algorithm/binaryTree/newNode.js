@@ -1,4 +1,5 @@
-export default function newNode(value) {
+
+module.exports.newNode = (value) => {
   return {
     value: value,
     leftNode: {},

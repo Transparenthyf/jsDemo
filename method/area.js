@@ -16,16 +16,7 @@ const area = (points) => {
   }
   // 面积
   let S = 0
-  // 最右侧点的坐标 (用于显示)
-  let rightMost = {
-    x: 0,
-    y: 0
-  }
   for (let i = 0; i < pointsArray.length; i++) {
-    if (pointsArray[i].x > rightMost.x) {
-      rightMost.x = pointsArray[i].x
-      rightMost.y = pointsArray[i].y
-    }
     // 下一点索引
     let next = 0
     if (i === pointsArray.length - 1) {
@@ -37,7 +28,6 @@ const area = (points) => {
     let y = (pointsArray[next].y + pointsArray[i].y) / 2
     S += x * y
   }
-  console.log(rightMost.x, rightMost.y)
   return Math.abs(S)
 }
 let s = area(points)

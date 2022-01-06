@@ -1,4 +1,4 @@
-export default function insert(node, value) {
+function insert(node, value) {
   // 节点不存在，新建一个节点
   if (typeof node.value === 'undefined') {
     node.value = value
@@ -16,3 +16,5 @@ export default function insert(node, value) {
     insert(node.rightNode, value)
   }
 }
+
+exports.insert = insert

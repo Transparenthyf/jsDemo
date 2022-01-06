@@ -1,4 +1,4 @@
-export default function printf(node) {
+function printf(node) {
   if (typeof node.leftNode.value !== "undefined") {
     printf(node.leftNode)
   }
@@ -7,3 +7,5 @@ export default function printf(node) {
   }
   console.log(node.value)
 }
+
+exports.printf = printf

@@ -7,7 +7,7 @@ const test = async function (n) {
   }
 }
 
-let p = function () {
+let p = async function () {
   return new Promise(function(resolve, reject) {
     setTimeout(function () {
       console.log(12222)
@@ -17,13 +17,13 @@ let p = function () {
 }
 
 const test3 = async function (n) {
-  console.log(n)
+  console.log(n)
 }
 
 const x = async () => {
-  t = [0, 1, 2, 3, 0, 4, 5, 6]
+  let t = [0, 1, 2, 3, 0, 4, 5, 6]
   for (let i = 0; i < t.length; i++) {
-    await test(t[i])
+    await test(t[i])
   }
 }
 
