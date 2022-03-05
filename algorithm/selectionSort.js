@@ -1,6 +1,6 @@
-const { arraySwap } = require('../method/arraySwap')
+import arraySwap from '../method/arraySwap.js'
 
-let arr = [3, 6, 7, 1, 5, 9, 0, 6, 4, 8, 2]
+let arr = [3, 6, 7, 1, 5, 9, 0, 6, 4, 8, 2, 15]
 
 for (let i = 0; i < arr.length; i++) {
   let index = i

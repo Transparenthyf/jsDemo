@@ -17,4 +17,4 @@ function insert(node, value) {
   }
 }
 
-exports.insert = insert
+export default insert

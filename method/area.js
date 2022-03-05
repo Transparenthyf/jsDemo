@@ -1,7 +1,8 @@
+// 计算多边形面积
 
-let points = '2,1 4,1 3,2 6,4 3,4 1,2'
+// let points = '2,1 4,1 3,2 6,4 3,4 1,2'
 
-const area = (points) => {
+function area(points) {
   // 记录多边形点坐标
   let pointsArray = []
   for (let i = 0; i < points.split(" ").length; i ++) {
@@ -30,5 +31,7 @@ const area = (points) => {
   }
   return Math.abs(S)
 }
-let s = area(points)
-console.log(s)
+// let s = area(points)
+// console.log(s)
+
+export default area

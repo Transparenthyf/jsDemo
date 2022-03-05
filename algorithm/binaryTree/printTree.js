@@ -8,4 +8,4 @@ function printf(node) {
   console.log(node.value)
 }
 
-exports.printf = printf
+export default printf

@@ -1,12 +1,8 @@
-const { arraySwap } = require('../method/arraySwap')
+import arraySwap from '../method/arraySwap.js'
 
-let arr = [3, 6, 7, 1, 5, 9, 0, 6, 4, 8, 2]
+let arr = [3, 6, 7, 1, 5, 9, 0, 6, 4, 8, 2, 15]
 
-for (let i = 0; i < arr.length; i++) {
-
-}
-
-const quickSort = (array, begin, finish) => {
+function quickSort(array, begin, finish) {
   // 开始结束中间没有值时退出
   if (finish - begin <= 1) {
     return
@@ -29,3 +25,5 @@ const quickSort = (array, begin, finish) => {
 
 quickSort(arr, 0, arr.length - 1)
 console.log(arr)
+
+export default quickSort
