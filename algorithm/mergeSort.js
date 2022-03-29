@@ -1,6 +1,4 @@
-import arraySwap from '../method/arraySwap.js'
-
-let array = [3, 6, 7, 1, 5, 9, 0, 6, 4, 8, 2, 15]
+// let array = [3, 6, 7, 1, 5, 9, 0, 6, 4, 8, 2, 15]
 
 function mergeSort(array, start, finish) {
   // 初始化参数
@@ -48,6 +46,6 @@ function mergeSort(array, start, finish) {
   return array
 }
 
-console.log(mergeSort(array, 0, array.length - 1))
+// console.log(mergeSort(array, 0, array.length - 1))
 
 export default mergeSort
