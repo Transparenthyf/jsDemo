@@ -1,6 +1,6 @@
 import arraySwap from '../method/arraySwap.js'
 
-// let arr = [3, 6, 7, 1, 5, 9, 0, 6, 4, 8, 2, 15]
+let arr = [3, 6, 7, 1, 5, 9, 0, 6, 4, 8, 2, 15]
 
 function insertSort(arr) {
   for (let i = 1; i < arr.length; i++) {
@@ -15,6 +15,6 @@ function insertSort(arr) {
   return arr
 }
 
-// console.log(insertSort(arr))
+console.log(insertSort(arr))
 
 export default insertSort
