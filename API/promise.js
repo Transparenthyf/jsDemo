@@ -1,42 +1,46 @@
-const test = async (n) => {
+async function test(n) {
   if (n === 0) {
     await p()
-    console.log(n)
   } else {
-    test3(n)
+    console.log(n)
   }
 }
 
-let p = async () => {
+async function p(num) {
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log(12222)
-      resolve('ok')
-    }, 3000)
+    if (num === 0) {
+      setTimeout(() => {
+        console.log(0)
+        resolve('ok')
+      }, 3000)
+    } else {
+      console.log(num)
+      reject('err')
+    }
   })
 }
 
-const test3 = async (n) => {
-  console.log(n)
-}
-
+/*
 const x = async () => {
   let t = [0, 1, 2, 3, 0, 4, 5, 6]
   for (let i = 0; i < t.length; i++) {
     await test(t[i])
   }
 }
+x()
+*/
 
-// x()
 
-const y = async () => {
-  await new Promise((resolve, reject) => {
-    console.log(sdfasd)
-    resolve()
-  })
-  setTimeout(() => {
-    console.log(1111111)
-  }, 3000)
-}
+/*
+p(1).then((res) => {
+  console.log(res)
+}).catch((err) => {
+  console.log(err)
+})
+*/
 
-y()
+p(1).then((res) => {
+  console.log(res)
+}, (err) => {
+  console.log(err)
+})
